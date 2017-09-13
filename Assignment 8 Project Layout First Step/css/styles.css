@@ -1,0 +1,35 @@
+    * {
+    margin: 0;
+}
+
+@supports (grid-area: auto) {
+    article.main {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "desc addr contact trans" "past past present present" "past past present present";
+    }
+    .header {}
+    .description {
+        grid-area: desc;
+    }
+    .address {
+        grid-area: addr;
+    }
+    .contactinfo {
+        grid-area: contact;
+    }
+    .transit {
+        grid-area: trans;
+    }
+    .pastimage {
+        grid-area: past;
+    }
+    .presentimage {
+        grid-area: present;
+    }
+.footer {}
+    img,video{width: auto;
+    height: auto;
+        m
+    }
