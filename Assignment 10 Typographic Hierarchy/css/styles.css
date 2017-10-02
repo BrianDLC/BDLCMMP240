@@ -1,0 +1,60 @@
+    * {
+    margin: 0;
+    background-color: #6cbf71;
+
+}
+
+@supports (grid-area: auto) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(4, 1fr) 50px;
+        margin: 0 auto;
+        grid-template-areas:
+            "desc acc features trans" 
+            "past past present present" 
+            "past past present present"
+            "gallery gallery gallery gallery"
+            "footer footer footer footer";
+    }
+    .header {
+       
+
+    }
+    .description {
+        grid-area: desc;
+        min-width: 850px;
+        text-align: left;
+    }
+    .access {
+        grid-area: acc;
+        align-self: center;
+        
+    }
+    .features {
+        grid-area: features;
+        align-self: center;
+
+    }
+    .transit {
+        grid-area: trans;
+        align-self: center;
+    }
+    .pastimage {
+        grid-area: past;
+
+    }
+    .presentimage {
+        grid-area: present;
+    }
+    .gallery {
+        grid-area: gallery;  
+    }
+.footer {
+    grid-area: footer;
+    }
+    
+    img,video{
+        width: auto;
+        height: auto;
+    }
