@@ -1,0 +1,78 @@
+    * {
+    margin: 0;
+    background-color: #6cbf71;
+    }
+
+@supports (grid-area: auto) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 418px;
+        grid-template-rows: 250px 1fr 50px;
+        margin: 5%;
+        grid-template-areas:
+            "desc links" 
+            "gallery gallery";
+        max-width: 100%;
+    }
+    .header {
+        text-align: center;
+        font-size: 5em;
+    }
+    .nav {
+        font-size: 30px;
+    }
+    .description {
+        grid-area: desc;
+        text-align: left;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        line-height: 1.2em;
+        padding: .5em;
+    }
+    .links {
+        grid-area: links;
+        display: grid;
+        grid-template-areas: 1fr 1fr 1fr;
+    }
+    .access {
+        align-self:center;  
+    }
+    .features {
+        align-self: center;        
+    }
+    .transit {
+        align-self: center;
+    }
+    .gallery {
+        grid-area: gallery;
+    }
+    .gallery img{
+        height: 20vw;
+    }
+    .footer {
+        margin: 5%;
+    }
+    
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
