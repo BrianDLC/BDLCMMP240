@@ -24,9 +24,13 @@
     .description {
         grid-area: desc;
         text-align: left;
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
         line-height: 1.2em;
         padding: .5em;
+    }
+    .description img{
+        width: auto;
+        height: 25%;
     }
     .links {
         grid-area: links;
@@ -34,7 +38,7 @@
         grid-template-areas: 1fr 1fr 1fr;
     }
     .access {
-        align-self:center;  
+        align-self: center;  
     }
     .features {
         align-self: center;        
@@ -46,7 +50,7 @@
         grid-area: gallery;
     }
     .gallery img{
-        height: 20vw;
+        height: 480px;
     }
     .footer {
         margin: 5%;
@@ -66,13 +70,12 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: darkgreen;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
 }
